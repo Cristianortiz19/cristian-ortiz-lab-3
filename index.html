@@ -9,7 +9,18 @@
 </head>
 <body>
   
-
-  <script src="script.js"></script>
+  <section-component
+  title="To Do List"
+  description="Tareas pendientes"
+  background="mediumpurple"
+  >
+  <input type="text" name="create-todo" id="create">
+  <button id="to-do-btn">create</button>
+  <ul id="to-do-list">
+    <to-do-item task="Hacer tarea de la u"></to-do-item>
+  </ul>
+  </section-component>
+  <script type="module" src="index.js"></script>
+  
 </body>
 </html>
