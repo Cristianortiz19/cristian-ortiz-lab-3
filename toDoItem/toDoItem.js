@@ -4,8 +4,6 @@ class ToDoItem extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         this.task = this.getAttribute('task');
         this.render();
-        const button = this.shadowRoot.querySelector('button')
-        button.addEventListener('click', () => this.deleteSelf())
     }
 
     static get observedAttributes() {
@@ -29,6 +27,9 @@ class ToDoItem extends HTMLElement {
         <label for="task1">${this.task}</label>
         <button>delete</button>
         </li>`
+
+        const button = this.shadowRoot.querySelector('button')
+        button.addEventListener('click', () => this.deleteSelf())
     }
 }
 

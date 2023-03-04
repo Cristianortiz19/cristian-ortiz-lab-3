@@ -6,12 +6,13 @@ toDoListBtn.addEventListener('click', () => addItem())
 const toDoList = document.getElementById('to-do-list')
 
 function addItem() {
-    const inputValue = document.getElementById('create-to-do')
-    console.log(inputValue.value)
+    const input = document.getElementById('create-to-do')
+    console.log(input.value)
     const toDoItem = document.createElement('to-do-item')
-    toDoItem.setAttribute('task', inputValue.value)
+    toDoItem.setAttribute('task', input.value)
 
     toDoList.append(toDoItem)
+    input.value = ''
 }
 
 function changeBg() {
