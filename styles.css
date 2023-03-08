@@ -1,15 +1,55 @@
 * {
     padding: 0;
     margin: 0;
-    
+    font-family: 'Figtree', sans-serif;
+    list-style: none;
 }
 
 body {
+    color: white;
+    background: linear-gradient(180deg, rgb(255, 98, 0) 0%, rgb(255, 0, 38) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+section-component {
     width: 100vh;
     height: 100vh;
-    background: linear-gradient(180deg, rgb(255, 98, 0) 0%, rgb(255, 0, 38) 100%);
+    align-items: center;
+    direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section-component h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+section-component input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+section-component button {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    color: rgb(255, 0, 38);
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .item {
-    color: blue;
+    list-style: none;
+    font-size: 16px;
 }
